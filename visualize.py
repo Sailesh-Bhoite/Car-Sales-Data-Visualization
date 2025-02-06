@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Sidebar Elements
 st.sidebar.markdown('<h1 style="color:violet"><u>Car Sales Data Visualization</u></h1>', unsafe_allow_html=True)
 with st.sidebar.expander("Basic Car Information"):
     st.write("You can Select a car from the list given to see its available models. This section helps you explore the different models offered by each car manufacturer, making it easier to find the one that fits your needs.")
@@ -18,6 +19,7 @@ with st.sidebar.expander("Fuel Type Data"):
 with st.sidebar.expander("Kilometer V/S Price"):
     st.write("A scatter plot that illustrates the relationship between car prices and their total kilometers covered. This visualization is to analyze how the distance covered by the cars influences its resale value.")
 
+# Tabs
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Basic Information", "Brand Sales", "Price v/s Age", "Customer Data", "City Sales", "Fuel Type Data", "Km v/s Price"])
 
 with tab1:
